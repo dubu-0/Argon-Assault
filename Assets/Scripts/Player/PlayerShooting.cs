@@ -10,7 +10,7 @@ namespace Player
         [SerializeField] private ParticleSystem[] laserEmitters;
         [SerializeField] private float rateOfFire;
         
-        private const string Fire1 = nameof(Fire1);
+        private const string Fire1 = nameof(Fire1); // Space && Left Ctrl
 
         private Coroutine _shooting;
         private int _emitterIndex;

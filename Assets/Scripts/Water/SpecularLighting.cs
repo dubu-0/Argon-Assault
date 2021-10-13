@@ -1,7 +1,6 @@
-using System;
 using UnityEngine;
 
-namespace UnityStandardAssets.Water
+namespace Water
 {
     [RequireComponent(typeof(WaterBase))]
     [ExecuteInEditMode]

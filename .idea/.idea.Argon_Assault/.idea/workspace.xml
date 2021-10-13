@@ -9,6 +9,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Water/GerstnerDisplace.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerCollisionHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/3rd party/Particle Dissolve Shader by Moonflower Carnivore/Scripts/ScrollingUVs_PDS.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../2D/Space Invaders/Space_Invaders/Assets/Scripts/Player.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -16,6 +18,12 @@
       <option value="$PROJECT_DIR$/Assets/PlayerMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Water/WaterBase.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerShooting.cs" />
+      <option value="$PROJECT_DIR$/Assets/Enemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyCollisionHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/GameSession.cs" />
+      <option value="$PROJECT_DIR$/Assets/Particle Dissolve Shader by Moonflower Carnivore/Scripts/HUDFPS.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCollisionHandler.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1zEA2Sb1ky7lwczyo790QuGuJlH" />
@@ -60,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1633702667419</updated>
       <workItem from="1633702672764" duration="9236000" />
-      <workItem from="1634031157871" duration="5527000" />
+      <workItem from="1634031157871" duration="16442000" />
     </task>
     <servers />
   </component>

@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 1618489796}
   - component: {fileID: 1618489798}
   - component: {fileID: 1618489797}
-  m_Layer: 0
-  m_Name: Laser
+  m_Layer: 3
+  m_Name: Right Laser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46,7 +46,7 @@ ParticleSystem:
   cullingMode: 0
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
@@ -3612,7 +3612,7 @@ ParticleSystem:
   CollisionModule:
     enabled: 0
     serializedVersion: 4
-    type: 0
+    type: 1
     collisionMode: 0
     colliderForce: 0
     multiplyColliderForceByParticleSize: 0
@@ -3783,7 +3783,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 4294967295
+      m_Bits: 192
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
@@ -4815,8 +4815,8 @@ GameObject:
   - component: {fileID: 1853138824}
   - component: {fileID: 1853138826}
   - component: {fileID: 1853138825}
-  m_Layer: 0
-  m_Name: Laser (1)
+  m_Layer: 3
+  m_Name: Left Laser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4850,7 +4850,7 @@ ParticleSystem:
   cullingMode: 0
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
@@ -8416,7 +8416,7 @@ ParticleSystem:
   CollisionModule:
     enabled: 0
     serializedVersion: 4
-    type: 0
+    type: 1
     collisionMode: 0
     colliderForce: 0
     multiplyColliderForceByParticleSize: 0
@@ -8587,7 +8587,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 4294967295
+      m_Bits: 192
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
@@ -9618,7 +9618,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4170509796036806}
   - component: {fileID: 65767838192354502}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9662,7 +9662,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4511197017296230}
   - component: {fileID: 65722035265767440}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9706,7 +9706,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4815001810674206}
   - component: {fileID: 65238288305302662}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9750,7 +9750,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4495194053536760}
   - component: {fileID: 65267309585895692}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9794,7 +9794,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4722561196283352}
   - component: {fileID: 65340164749215534}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9839,8 +9839,11 @@ GameObject:
   - component: {fileID: 4433942057210488}
   - component: {fileID: 33144904916599870}
   - component: {fileID: 23649099192709106}
+  - component: {fileID: 1770942519}
   - component: {fileID: 1343630105}
-  m_Layer: 0
+  - component: {fileID: 1770942517}
+  - component: {fileID: 1770942518}
+  m_Layer: 3
   m_Name: Ship
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9913,6 +9916,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!54 &1770942519
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510364872509504}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!114 &1343630105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9930,6 +9949,34 @@ MonoBehaviour:
   xRotationAngle: 18
   yRotationAngle: 12
   zRotationAngle: 25
+--- !u!114 &1770942517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510364872509504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 988f21173f9128446bc67dceefbb7604, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserEmitters:
+  - {fileID: 1618489798}
+  - {fileID: 1853138826}
+  rateOfFire: 30
+--- !u!114 &1770942518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510364872509504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37098cb638e49424394ad1d8f9727e07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1692945755674982
 GameObject:
   m_ObjectHideFlags: 0
@@ -9940,7 +9987,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4959394447520530}
   - component: {fileID: 65861728141062150}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9983,7 +10030,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4459242769065246}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
