@@ -216,6 +216,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97705e318685c5048b8ee023388544a9, type: 3}
+--- !u!198 &5431182117530669685 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1110917127744021282, guid: 97705e318685c5048b8ee023388544a9, type: 3}
+  m_PrefabInstance: {fileID: 4915021905687933271}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6514015677972519779
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -242,11 +247,15 @@ PrefabInstance:
     - target: {fileID: 1770942518, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
       propertyPath: explosion
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5431182117530669685}
     - target: {fileID: 1770942518, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
       propertyPath: gameSession
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1770942518, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
+      propertyPath: playerShooting
+      value: 
+      objectReference: {fileID: 6514015679726676822}
     - target: {fileID: 1770942518, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
       propertyPath: sceneReloadDelay
       value: 1
@@ -350,3 +359,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4433942057210488, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
   m_PrefabInstance: {fileID: 6514015677972519779}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6514015679726676822 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1770942517, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
+  m_PrefabInstance: {fileID: 6514015677972519779}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 988f21173f9128446bc67dceefbb7604, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

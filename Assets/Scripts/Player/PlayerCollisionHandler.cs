@@ -9,18 +9,28 @@ namespace Player
     [RequireComponent(typeof(MeshRenderer))]
     public class PlayerCollisionHandler : MonoBehaviour
     {
+        [Header("Game session")]
         [SerializeField] private GameSession gameSession;
         [SerializeField] private float sceneReloadDelay = 1f;
-        [SerializeField] private PlayableDirector director;
-        [SerializeField] private ParticleSystem explosion;
         
+        [Header("Timeline")]
+        [SerializeField] private PlayableDirector director;
+        
+        
+        [SerializeField] private ParticleSystem explosion;
+        [SerializeField] private Transform parentForExplosionInstance;
+
         private void OnTriggerEnter(Collider other)
         {
-            GetComponent<MeshRenderer>().enabled = false;
-            GetComponent<PlayerMovement>().enabled = false;
-            director.enabled = false;
-            explosion.Play();
+            var instance = Instantiate(explosion, transform.position, Quaternion.identity);
+            instance.transform.parent = parentForExplosionInstance;
+            instance.Play();
+            Destroy(instance, 3f);
+            
+            director.Stop();
             gameSession.Invoke(nameof(gameSession.RestartCurrentScene), sceneReloadDelay);
+            
+            Destroy(gameObject);
         }
     }
 }

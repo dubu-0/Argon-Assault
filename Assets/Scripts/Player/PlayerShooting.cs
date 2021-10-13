@@ -21,6 +21,11 @@ namespace Player
             StartShooting();
         }
 
+        public void StopShootingCompletely()
+        {
+            Destroy(this);
+        }
+
         private void StartShooting()
         {
             if (Input.GetAxis(Fire1) != 0 && !_isFiring)
