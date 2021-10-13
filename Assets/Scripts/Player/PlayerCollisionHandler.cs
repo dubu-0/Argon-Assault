@@ -6,7 +6,7 @@ using UnityEngine.Playables;
 namespace Player
 {
     [RequireComponent(typeof(PlayerMovement))]
-    [RequireComponent(typeof(MeshFilter))]
+    [RequireComponent(typeof(MeshRenderer))]
     public class PlayerCollisionHandler : MonoBehaviour
     {
         [SerializeField] private GameSession gameSession;
@@ -16,7 +16,7 @@ namespace Player
         
         private void OnTriggerEnter(Collider other)
         {
-            GetComponent<MeshFilter>().mesh = null;
+            GetComponent<MeshRenderer>().enabled = false;
             GetComponent<PlayerMovement>().enabled = false;
             director.enabled = false;
             explosion.Play();
