@@ -20,11 +20,11 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerShooting.cs" />
       <option value="$PROJECT_DIR$/Assets/Enemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyCollisionHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/GameSession.cs" />
       <option value="$PROJECT_DIR$/Assets/Particle Dissolve Shader by Moonflower Carnivore/Scripts/HUDFPS.cs" />
       <option value="$PROJECT_DIR$/Temp/Compiled-Unity5-Particle Softrim Dissolve-Alpha Blend.shader" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCollisionHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyCollisionHandler.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1zEA2Sb1ky7lwczyo790QuGuJlH" />
@@ -70,7 +70,7 @@
       <updated>1633702667419</updated>
       <workItem from="1633702672764" duration="9236000" />
       <workItem from="1634031157871" duration="16442000" />
-      <workItem from="1634132994699" duration="882000" />
+      <workItem from="1634132994699" duration="2431000" />
     </task>
     <servers />
   </component>
