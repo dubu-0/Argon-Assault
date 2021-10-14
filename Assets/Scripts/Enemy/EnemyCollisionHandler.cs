@@ -20,8 +20,7 @@ namespace Enemy
         [SerializeField] private ScoreUpdater scoreUpdater;
 
         private Enemy _enemy;
-        private readonly List<ParticleCollisionEvent> _particleCollisionEvents = new List<ParticleCollisionEvent>();
-        
+
         private void Start()
         {
             var rb = GetComponent<Rigidbody>();
@@ -56,12 +55,9 @@ namespace Enemy
 
         private void ExplodeAtCollisionPosition(ParticleSystem playerLaser)
         {
-            var eventCount = playerLaser.GetCollisionEvents(gameObject, _particleCollisionEvents);
-
-            for (var i = 0; i < eventCount; i++)
-            {
-                Explode(explosionOnHit, _particleCollisionEvents[i].intersection);
-            }
+            var particleCollisionEvents = new List<ParticleCollisionEvent>();
+            playerLaser.GetCollisionEvents(gameObject, particleCollisionEvents);
+            Explode(explosionOnHit, particleCollisionEvents[0].intersection);
         }
     }
 }
