@@ -8,7 +8,8 @@ namespace Player
     public class PlayerShooting : MonoBehaviour
     {
         [SerializeField] private ParticleSystem[] laserEmitters;
-        [SerializeField] private float rateOfFire;
+        [SerializeField] private float rateOfFire = 30;
+        [SerializeField] private int damage = 1;
         
         private const string Fire1 = nameof(Fire1); // Space && Left Ctrl
 
@@ -25,6 +26,8 @@ namespace Player
         {
             Destroy(this);
         }
+
+        public int GetDamage() => damage;
 
         private void StartShooting()
         {
