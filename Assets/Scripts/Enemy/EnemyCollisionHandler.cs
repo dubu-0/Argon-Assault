@@ -1,5 +1,3 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using Player;
 using UnityEngine;
@@ -13,7 +11,6 @@ namespace Enemy
         [Header("Explosion VFX")]
         [SerializeField] private ParticleSystem explosionAfterDeath;
         [SerializeField] private ParticleSystem explosionOnHit;
-        [SerializeField] private Transform parentForExplosionInstance;
 
         [Header("Score")] 
         [SerializeField] private int scoreAdd;
@@ -48,7 +45,7 @@ namespace Enemy
         private void Explode(ParticleSystem explosionType, Vector3 where)
         {
             var instance = Instantiate(explosionType, where, Quaternion.identity);
-            instance.transform.parent = parentForExplosionInstance;
+            instance.transform.parent = transform;
             instance.Play();
             Destroy(instance.gameObject, 3);
         }

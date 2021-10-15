@@ -11,6 +11,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Water/GerstnerDisplace.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScoreUpdater.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CFC1AD89-0650-411E-946C-FF2E6F276711/b4/f05bfce5/Component.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/RuntimeInstances.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerCollisionHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5406A456-CF73-4443-B3D0-2A7D123287F1/a9/588c5b9c/Tuple`5.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/3rd party/Particle Dissolve Shader by Moonflower Carnivore/Scripts/ScrollingUVs_PDS.cs" root0="FORCE_HIGHLIGHTING" />
@@ -26,10 +27,11 @@
       <option value="$PROJECT_DIR$/Temp/Compiled-Unity5-Particle Softrim Dissolve-Alpha Blend.shader" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCollisionHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerShooting.cs" />
-      <option value="$PROJECT_DIR$/Assets/ScoreUpdater.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IDamageReceiver.cs" />
+      <option value="$PROJECT_DIR$/Assets/RuntimeInstances.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyCollisionHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/ScoreUpdater.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1zEA2Sb1ky7lwczyo790QuGuJlH" />
@@ -80,6 +82,7 @@
       <workItem from="1634132994699" duration="5546000" />
       <workItem from="1634205631850" duration="2540000" />
       <workItem from="1634209438244" duration="23049000" />
+      <workItem from="1634309155235" duration="3627000" />
     </task>
     <servers />
   </component>
